@@ -1,21 +1,21 @@
+import Analyze from "../components/Analyze";
+import Moderate from "../components/Moderate";
 import useId from "../hooks/useId";
-import HomePage from "../pages/Home";
-import Properties from "../pages/Properties";
 
 export const navbar = [
   {
     id: useId,
-    element: <HomePage />,
+    element: <Analyze />,
     title: "Analyze",
-    path: "/home",
+    path: "/analyze",
     private: false,
     hidden: false,
   },
   {
     id: useId,
-    element: <Properties />,
+    element: <Moderate />,
     title: "Moderate",
-    path: "/properties",
+    path: "/moderate",
     private: false,
     hidden: false,
   },

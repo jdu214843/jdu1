@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "./style";
 
-export const Properties = () => {
+export const Moderate = () => {
   return <Container>Moderate</Container>;
 };
 
-export default Properties;
+export default Moderate;

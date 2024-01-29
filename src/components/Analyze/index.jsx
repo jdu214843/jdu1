@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "./style";
 
-export const Home = () => {
+export const Analyze = () => {
   return <Container>JDU AI</Container>;
 };
 
-export default Home;
+export default Analyze;

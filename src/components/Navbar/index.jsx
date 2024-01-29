@@ -2,13 +2,17 @@ import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar";
 import { Container, Link, Section, Wrapper } from "./style";
+import UserIcon from "../UserIcons";
+import Account from "../Account";
 
-export const Home = () => {
+import AngleDownIcon from "../DownArrow";
+
+export const Analyze = () => {
   const navigate = useNavigate();
   return (
     <Container>
       <Wrapper>
-        <Section onClick={() => navigate("/home")} logo>
+        <Section onClick={() => navigate("/analyze")} logo>
           <h3>JDU AI</h3>
         </Section>
         <Section>
@@ -25,7 +29,9 @@ export const Home = () => {
           })}
         </Section>
         <Section>
-          <button>Account</button>
+          <UserIcon />
+          <Account />
+          <AngleDownIcon />
         </Section>
       </Wrapper>
       <Outlet />
@@ -33,4 +39,4 @@ export const Home = () => {
   );
 };
 
-export default Home;
+export default Analyze;
